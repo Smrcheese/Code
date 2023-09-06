@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 06:44:43 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/04 15:26:58 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/06 05:35:58 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,11 @@ void	ft_print_comb(void)
 }
 
 /*
+
+this exercise if very similar to the next one
+whoever in this case i'm directly using the
+ascii values for the chars.
+
 int main()
 {
 	ft_print_comb();

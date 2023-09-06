@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 06:56:57 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/04 18:31:49 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/06 05:32:07 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,16 @@ void	ft_print_comb2(void)
 }
 
 /*
+
+the variables are stated as chars because they are going to be printed as chars
+the variables are initialized as '0' - 1 
+because the first loop will increment them instantly
+so we set them one value below 0, meaning: "/" 
+so when the loop starts, it will increment to 0
+this is mostly for visual formatting purposes, compared to the prior exercise
+
+* /
+
 int main()
 {
 	ft_print_comb2();

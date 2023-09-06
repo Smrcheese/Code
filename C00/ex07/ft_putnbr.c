@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 11:25:47 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/04 17:39:44 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/06 05:31:54 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,31 @@ void	ft_putnbr(int nb)
 	}
 }
 
+/*
+Note:
+
+this function was hard to implement because of the recursion
+the recursion is needed to print the digits in the correct order
+but it also makes it hard to understand what is happening
+whoever, to summarize, the function ifs work like this:
+
+the first if determines if the number is negative, if so
+it will print a "-" and make it positive
+
+the second if determines if the number is a single digit
+if so, it will print it by first converting it to a char
+by adding '0' to it
+
+the else statement is the recursion part
+it will call the function again, but this time with the number
+divided by 10. doing this will separate the number into digits
+and the function will print them in the correct order
+
+* /
 
 int main()
 {
 	ft_putnbr(1066750);
 	return (0);
 }
+*/
