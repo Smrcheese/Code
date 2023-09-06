@@ -7,11 +7,14 @@ Warning: If you're thinking of using or referencing any code from this repo, it'
 
 Why Understanding the Code Matters:
 
-    Learning: Escole 42 is all about hands-on learning. Copy-pasting code without understanding it won't help you grow as a coder and eventually the nightmare is going to reach out to you.
+    Learning: Escole 42 is all about hands-on learning. Copy-pasting code without understanding
+    it won't help you grow as a coder and eventually the nightmare is going to reach out to you.
 
-    Troubleshooting: When things go haywire (as they often do in coding), you'll need to troubleshoot. Without a solid grasp of the code, you're in for a dissaster.
+    Troubleshooting: When things go haywire (as they often do in coding), you'll 
+    need to troubleshoot. Without a solid grasp of the code, you're in for a dissaster.
 
-    the long run: yeah, you're copying code right now but what are you going to do in a interview? during a test? are you gonna fake your habilities during your whole career?
+    the long run: yeah, you're copying code right now but what are you going to do in a interview? 
+    during a test? are you gonna fake your habilities during your whole career?
     
 In short, think of this repo as a resource to learn from, get ideas, and maybe even inspire your own projects. But please, resist the urge to copy-paste without comprehension.
 
