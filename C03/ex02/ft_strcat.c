@@ -6,15 +6,15 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 05:46:02 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/06 06:19:17 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/06 06:23:23 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, char *src)
 {
-	int i;
-	int j;
-	
+	int	i;
+	int	j;
+
 	i = 0;
 	j = 0;
 	while (1)
