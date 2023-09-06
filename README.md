@@ -1,4 +1,4 @@
-# Code
+# Lisbon #14 Piscine
 
 Welcome to my Escole 42 code repository tat i've made during the #14 lisbon 42 piscine! (from aug 28 to sep 24 2023) Here, you'll find the projects and assignments I've been working on during my time at Escole 42. Before you dive in, I want to share a crucial piece of advice:
 Disclaimer
