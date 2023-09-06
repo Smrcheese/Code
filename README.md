@@ -17,4 +17,4 @@ In short, think of this repo as a resource to learn from, get ideas, and maybe e
 
 __________________
 
-Feel free to explore the code in this repository, study it, and use it as a reference for your own projects. If you have any questions or need clarification on anything, don't hesitate to reach out to me. I'm here to help and explain concepts.
+Feel free to explore the code in this repository, study it, and use it as a reference for your own projects. If you have any questions or need clarification on anything, don't hesitate to reach out to me.
