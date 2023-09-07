@@ -6,34 +6,56 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 07:53:35 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/06 08:34:40 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/07 17:05:42 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <string.h>
+
+int	ft_strlen(char *str)
+{
+	int	ctd2;
+
+	ctd2 = 0;
+	while (str[ctd2] != '\0')
+		ctd2++;
+	return (ctd2);
+}
+
 char	*ft_strstr(char *str, char *to_find)
 {
-	while (*str)
+	unsigned int	ctd;
+	unsigned int	ctd2;
+
+	ctd = 0;
+	ctd2 = 0;
+	if (*to_find == '\0')
+		return (str);
+	while (str[ctd])
 	{
-		int	i;
-
-		i = 0;
-		while (to_find[i] == str[i])
+		if (str[ctd] == to_find[ctd2])
 		{
-			i++;
-    		if (to_find[i] == '\0')
-    		{
-    			return (char *)str;
-    		}
+			while (to_find[ctd2])
+			{
+				if (to_find[ctd2] != str[ctd + ctd2])
+					break ;
+				ctd2++;
+			}
+			if (ctd2 == (unsigned int)ft_strlen(to_find))
+				return (str + ctd);
+			ctd2 = 0;
 		}
-		str++;
+		ctd++;
 	}
+	return (0);
 }
 
-#include <stdio.h>
-int main()
+/*int main()
 {
-	char str[200] = "i really like pizza do you like pizza aswell?";
-	char to_find[200] = "pizza";
-	char ch = ft_strstr(str, to_find);
-	printf("result:\n%s", &ch);
-}
+	char a[] = "testing my string";
+	char b[] = "";
+
+	printf("%s", ft_strstr(a, b));
+	return(0);
+}*/
