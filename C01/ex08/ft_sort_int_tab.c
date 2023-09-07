@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 16:59:45 by sezequie          #+#    #+#             */
-/*   Updated: 2023/08/31 17:00:36 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/07 17:38:58 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,17 @@ void	ft_sort_int_tab(int *tab, int size)
 		j = i + 1;
 	}
 }
+
+/*
+int main()
+{
+	int tab[5] = {5, 4, 3, 2, 1};
+	int *ptr;
+	int size;
+
+	ptr = tab;
+	size = 5;
+	ft_sort_int_tab(ptr, size);
+	return (0);
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sezequie <sezequie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 08:32:30 by sezequie          #+#    #+#             */
-/*   Updated: 2023/08/30 08:33:33 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/07 17:38:25 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,14 @@ int	ft_strlen(char *str)
 		i++;
 	return (i);
 }
+
+/*
+int main()
+{
+	char *str;
+
+	str = "Hello World!";
+	ft_strlen(str);
+	return (0);
+}
+*/
