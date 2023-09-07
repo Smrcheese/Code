@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 08:27:18 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/07 17:21:54 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/07 17:26:13 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ void	ft_putstr(char *str)
 	{
 		i++;
 	}
-	write(1, str, i)
+	write(1, str, i);
 }
