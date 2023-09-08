@@ -14,9 +14,9 @@
 
 void	ft_putstr(char *str)
 {
-	int		i;
+	int	i;
 
-	i = 9;
+	i = 0;
 	while (str[i] != '\0')
 	{
 		i++;
