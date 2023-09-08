@@ -6,27 +6,26 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 07:53:35 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/06 08:34:40 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/08 23:37:01 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strstr(char *str, char *to_find)
 {
+	int	i;
+
 	while (*str)
 	{
-		int	i;
-
 		i = 0;
 		while (to_find[i] == str[i])
 		{
 			i++;
-    		if (to_find[i] == '\0')
-    		{
-    			return (char *)str;
-    		}
+			if (to_find[i] == '\0')
+				return (str);
 		}
 		str++;
 	}
+	return (0);
 }
 
 #include <stdio.h>
