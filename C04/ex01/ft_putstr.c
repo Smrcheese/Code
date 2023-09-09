@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/09 01:40:57 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/09 01:44:37 by sezequie         ###   ########.fr       */
+/*   Created: 2023/09/09 01:45:03 by sezequie          #+#    #+#             */
+/*   Updated: 2023/09/09 01:45:12 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (*(str + i))
-		i++;
-	return (i);
+void	ft_putstr(char *str)
+{
+	int	size;
+
+	size = 0;
+	while (*(str + size))
+		size++;
+	write(1, str, size);
 }
