@@ -29,6 +29,7 @@ char	*ft_strcapitalize(char *str)
 		i++;
 	}
 }
+
 /*
 #include <stdio.h>
 
