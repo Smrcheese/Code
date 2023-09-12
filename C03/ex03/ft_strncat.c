@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 06:49:01 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/06 06:50:42 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/12 16:08:27 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcat(char *dest, char *src, unsigned int nb)
 
 	i = 0;
 	j = 0;
-	while (1)
+	while (src[i])
 	{
 		if (dest[i] == '\0')
 		{
@@ -33,6 +33,7 @@ char	*ft_strcat(char *dest, char *src, unsigned int nb)
 	}
 }
 
+/*
 #include <stdio.h>
 int main()
 {
@@ -41,3 +42,4 @@ int main()
 	ft_strcat(dest, src, 10);
 	printf("result: \n%s", &dest);
 }
+*/

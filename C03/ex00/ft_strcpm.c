@@ -6,28 +6,22 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 04:23:58 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/06 04:38:14 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/12 15:48:44 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strcpm(char *s1, char *s2)
 {
-	int		i;
-	char	c1;
-	char	c2;
+	int	i;
 
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0')
+	while (s1[i] != '\0' || s2[i] != '\0')
 	{
-		c1 = s1[i];
-		c2 = s2[i];
-		if (c1 != c2)
-			return (c1 - c2);
+		if (s1[i] != s2[i])
+			return (0);
 		i++;
 	}
-	c1 = s1[i];
-	c2 = s2[i];
-	return (c1 - c2);
+	return (1);
 }
 
 /*
