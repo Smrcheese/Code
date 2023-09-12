@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 05:40:42 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/04 15:59:03 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/12 15:07:26 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,13 @@ int	ft_str_is_alpha(char *str)
 	}
 	return (1);
 }
+
+/*
+int main()
+{
+	char str[] = "Hello World";
+
+	printf("%d\n", ft_str_is_alpha(str));
+	return (0);
+}
+*/

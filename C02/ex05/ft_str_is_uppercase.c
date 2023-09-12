@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 02:00:22 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/06 02:01:48 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/12 15:14:06 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,15 @@ int	ft_str_is_uppercase(char *str)
 	}
 	return (1);
 }
+
+/*
+#include <stdio.h>
+
+int main()
+{
+	char	str[] = "HELLO";
+
+	printf("%d", ft_str_is_uppercase(str));
+	return (0);
+}
+*/
