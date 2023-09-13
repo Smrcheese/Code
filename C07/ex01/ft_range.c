@@ -6,11 +6,11 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 22:16:09 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/11 22:16:40 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/13 18:26:21 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int *ft_range(int min, int max)
+int	*ft_range(int min, int max)
 {
 	int	*range;
 	int	i;

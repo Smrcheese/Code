@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 04:23:58 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 15:33:32 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/13 18:23:12 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_strcmp(char *s1, char *s2)
 
 	i = 0;
 	while (s1[i] != '\0' || s2[i] != '\0')
-	{	
+	{
 		c1 = s1[i];
 		c2 = s2[i];
 		if (c1 != c2)

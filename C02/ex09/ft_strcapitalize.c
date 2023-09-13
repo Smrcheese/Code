@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 03:50:08 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 13:08:40 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/13 18:20:58 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strcapitalize(char *str)
 		prev = c;
 		i++;
 	}
-	return(str);
+	return (str);
 }
 
 /*

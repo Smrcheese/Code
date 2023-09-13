@@ -6,11 +6,11 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 20:53:22 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/11 20:54:56 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/13 18:26:36 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_find_next_prime(int nb)
+int	ft_find_next_prime(int nb)
 {
 	int	i;
 
