@@ -6,39 +6,32 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 21:03:05 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 13:02:53 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/13 13:11:46 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	index;
+	unsigned int	i;
 
-	index = 0;
-	while (src[index] != '\0' && index < n)
+	i = 0;
+	while (i < n - 1 && src[i] != '\0')
 	{
-		dest[index] = src[index];
-		index++;
+		dest[i] = src[i];
+		i++;
 	}
-	if (index < n)
-	{
-		while (index < n)
-		{
-			dest[index] = '\0';
-			index++;
-		}
-	}
+	dest[i] = '\0';
 	return (dest);
 }
 
 /*
 int main()
 {
-	char dest[100];
-	char src[] = "Hello World";
+    char dest[100];
+    char src[] = "Hello World";
 
-	ft_strncpy(dest, src, 5);
-	printf("%s\n", dest);
-	return (0);
+    ft_strncpy(dest, src, 5);
+    printf("%s\n", dest);
+    return (0);
 }
 */
