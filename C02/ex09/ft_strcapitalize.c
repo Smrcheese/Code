@@ -30,6 +30,7 @@ char	*ft_strcapitalize(char *str)
 		prev = c;
 		i++;
 	}
+	return(str);
 }
 
 /*
