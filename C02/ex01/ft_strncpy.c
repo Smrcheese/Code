@@ -6,21 +6,25 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 21:03:05 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 13:11:46 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/13 13:13:22 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	i;
+	unsigned int	count;
 
-	i = 0;
-	while (i < n - 1 && src[i] != '\0')
+	count = 0;
+	while (count < n && src[count] != '\0')
 	{
-		dest[i] = src[i];
-		i++;
+		dest[count] = src[count];
+		count++;
 	}
-	dest[i] = '\0';
+	while (count < n)
+	{
+		dest[count] = '\0';
+		count++;
+	}
 	return (dest);
 }
 
