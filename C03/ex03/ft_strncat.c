@@ -6,31 +6,27 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 06:49:01 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/12 16:08:27 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/13 15:44:36 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src, unsigned int nb)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
-	int	j;
+	int				i;
+	unsigned int	j;
 
 	i = 0;
 	j = 0;
-	while (src[i])
-	{
-		if (dest[i] == '\0')
-		{
-			while (src[j] != '\0' && j < nb)
-			{
-				dest[i] = src[j];
-				i++;
-				j++;
-			}
-			return (dest);
-		}
+	while (dest[i] != '\0')
 		i++;
+	while (j != nb && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
+	dest[i] = 0;
+	return (dest);
 }
 
 /*
