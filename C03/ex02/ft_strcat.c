@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 05:46:02 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/06 06:23:23 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/14 19:55:01 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,15 @@ char	*ft_strcat(char *dest, char *src)
 
 	i = 0;
 	j = 0;
-	while (1)
+	while (dest[j])
+		j++;
+	while (src[i])
 	{
-		if (dest[i] == '\0')
-		{
-			while (src[j] != '\0')
-			{
-				dest[i] = src[j];
-				i++;
-				j++;
-			}
-			return (dest);
-		}
+		dest[j + i] = src[i];
 		i++;
 	}
+	dest[j + i] = '\0';
+	return (dest);
 }
 
 /*
