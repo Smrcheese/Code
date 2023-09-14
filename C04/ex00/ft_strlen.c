@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 01:40:57 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 18:21:40 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/14 20:18:47 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while (*(str + i))
+	while (str[i] != '\0')
 		i++;
 	return (i);
 }
