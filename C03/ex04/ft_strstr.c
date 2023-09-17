@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 07:53:35 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/10 00:58:34 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/17 17:20:37 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,28 +25,25 @@ int	ft_strlen(char *str)
 
 char	*ft_strstr(char *str, char *to_find)
 {
-	unsigned int	ctd;
-	unsigned int	ctd2;
+	int	i;
+	int	j;
+	int	len;
 
-	ctd = 0;
-	ctd2 = 0;
-	if (*to_find == '\0')
+	i = 0;
+	j = 0;
+	len = ft_strlen(to_find);
+	if (len == 0)
 		return (str);
-	while (str[ctd])
+	while (str[i] != '\0')
 	{
-		if (str[ctd] == to_find[ctd2])
+		while (str[i + j] == to_find[j] && j < len)
 		{
-			while (to_find[ctd2])
-			{
-				if (to_find[ctd2] != str[ctd + ctd2])
-					break ;
-				ctd2++;
-			}
-			if (ctd2 == (unsigned int)ft_strlen(to_find))
-				return (str + ctd);
-			ctd2 = 0;
+			if (j == len - 1)
+				return (&str[i]);
+			j++;
 		}
-		ctd++;
+		j = 0;
+		i++;
 	}
 	return (0);
 }

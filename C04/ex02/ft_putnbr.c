@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 01:48:12 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/14 20:07:40 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/17 14:14:39 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr(int nb)
 		write(1, "-", 1);
 		nb = nb * -1;
 	}
-	if (nb <= 9)
+	if (nb < 10)
 	{
 		c = nb + '0';
 		write(1, &c, 1);
