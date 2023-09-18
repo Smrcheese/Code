@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 19:36:58 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/12 14:54:40 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:57:54 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,15 @@ int	ft_iterative_power(int nb, int power)
 	}
 	return (n);
 }
+
+/*
+#include <stdio.h>
+int main()
+{
+	int result;
+	
+	result = ft_iterative_power(5, 3);
+	printf("result: %d", result);
+	return (0);
+}
+*/

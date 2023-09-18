@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 20:49:27 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 18:25:14 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:58:20 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,15 @@ int	ft_is_prime(int nb)
 	}
 	return (1);
 }
+
+/*
+#include <stdio.h>
+int main()
+{
+	int result;
+	
+	result = ft_is_prime(3);
+	printf("result: %d", result);
+	return (0);
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 20:53:22 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 18:26:36 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:57:29 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,15 @@ int	ft_find_next_prime(int nb)
 	}
 	return (nb);
 }
+
+/*
+#include <stdio.h>
+int main()
+{
+	int result;
+	
+	result = ft_find_next_prime(10);
+	printf("result: %d", result);
+	return (0);
+}
+*/

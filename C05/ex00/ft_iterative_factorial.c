@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:13:33 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/13 18:25:02 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:57:36 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,15 @@ int	ft_iterative_factorial(int nb)
 	}
 	return (factorial);
 }
+
+/*
+#include <stdio.h>
+int main()
+{
+	int result;
+	
+	result = ft_iterative_factorial(10);
+	printf("result: %d", &result);
+	return (0);
+}
+*/

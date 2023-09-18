@@ -10,30 +10,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include <stdio.h>
+
+int ft_atoi(char *str)
 {
-	int	num;
-	int	i;
-	int	sign;
+	int i;
+	int sign;
+	int result;
 
 	i = 0;
 	sign = 1;
-	num = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+	result = 0;
+	while (str[i] == ' ' || str[i] == '	' || str[i] == '\n')
 		i++;
 	while (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-		{
 			sign *= -1;
-		}
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		num *= 10;
-		num += str[i] - '0';
+		result *= 10;
+		result += str[i] - '0';
 		i++;
 	}
-	return (num * sign);
+	return (result * sign);
+}
+
+int main()
+{
+	char str[] = "   ---+--765dwadwa";
+	printf("result:\n%d", ft_atoi(str));
+	return (0);
 }
