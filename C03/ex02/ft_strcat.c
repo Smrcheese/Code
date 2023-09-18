@@ -12,35 +12,30 @@
 
 char	*ft_strcat(char *dest, char *src)
 {
-	int	i;
-	int	j;
+	char	*original_dest;
 
-	i = 0;
-	j = 0;
-	while (dest[j])
-		j++;
-	while (src[i])
+	original_dest = dest;
+	while (*dest != '\0')
 	{
-		dest[j + i] = src[i];
-		i++;
+		dest ++;
 	}
-	dest[j + i] = '\0';
-	return (dest);
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest ++;
+		src ++;
+	}
+	*dest = '\0';
+	return (original_dest);
 }
 
 /*
-
-ft_strcat is a function that appends one array to another
-by taking two arguments, the first is the destination array
-and the second is the source array
-* /
-
 #include <stdio.h>
 int main()
 {
 	char dest[200] = "i really like pizza ";
 	char src[200] = "do you like pizza aswell?";
 	ft_strcat(dest, src);
-	printf("result: \n%s", &dest);
+	printf("result: \n%s", dest);
 }
 */
