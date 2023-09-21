@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 01:50:30 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/14 18:03:26 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/21 21:03:27 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int ft_atoi(char *str)
 
 int main()
 {
-	char str[] = "   ---+--765dwadwa";
-	printf("result:\n%d", ft_atoi(str));
+	char str[] = "   76432345dwadwa";
+	printf("result:\n%d\n", ft_atoi(str));
 	return (0);
 }
