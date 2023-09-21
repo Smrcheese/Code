@@ -6,7 +6,7 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 19:51:05 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/21 22:12:58 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/09/21 22:22:32 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char		**ft_split(char *str)
 
 int main()
 {
-	char str[] = " jesus es altamente homosexual,	come pene diariamente 911   ";
+	char str[] = " i hate this dude because he stinks    0212   hello ";
 	char **split = ft_split(str);
 	int i = 0;
 	while (split[i])
