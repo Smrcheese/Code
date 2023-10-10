@@ -6,32 +6,29 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 13:15:56 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/17 14:19:15 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/10/10 01:38:20 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 int	ft_ultimate_range(int **range, int min, int max)
 {
-	long int	i;
-	int			*ptr;
+	int	size;
+	int	i;
 
+	i = -1;
 	if (min >= max)
 	{
 		*range = NULL;
 		return (0);
 	}
-	ptr = malloc((max - min) * sizeof(int));
-	if (ptr == NULL)
+	size = max - min;
+	*range = malloc(sizeof(int) * size);
+	if (*range == NULL)
 		return (-1);
-	i = 0;
-	while (min < max)
-	{
-		ptr[i] = min;
-		min++;
-		i++;
-	}
-	*range = ptr;
-	return (i);
+	while (++i < size)
+		(*range)[i] = min + i;
+	return (size);
 }

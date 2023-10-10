@@ -6,14 +6,14 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 04:48:29 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/03 12:41:10 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/10/10 01:35:40 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush0X.h"
+int	rush(int x, int y);
 
 int	main(void)
 {
-	rush(3, 3);
+	rush(10, 10);
 	return (0);
 }

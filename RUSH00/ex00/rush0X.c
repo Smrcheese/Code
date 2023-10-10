@@ -6,13 +6,13 @@
 /*   By: sezequie <sezequie@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 05:27:26 by sezequie          #+#    #+#             */
-/*   Updated: 2023/09/03 13:01:01 by sezequie         ###   ########.fr       */
+/*   Updated: 2023/10/10 01:45:56 by sezequie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.h"
+void	ft_putchar(char c);
 
-int	rushifs(int x, int y, int i, int j)
+static	int	rushifs(int x, int y, int i, int j)
 {
 	if ((i == 0 && j == 0) || (i == x - 1 && j == y - 1))
 		ft_putchar('/');
